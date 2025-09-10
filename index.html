@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galabau Essen – Hecken schneiden in Essen</title>
+  <meta name="description" content="Heckenschnitt & Formschnitt und Strauchschnitt & kleinere Bäume in Essen. Henning & Justus – sauber, schnell & fair. Jetzt Termin vereinbaren.">
+  <style>
+    :root{
+      --green-600:#16a34a;
+      --green-700:#15803d;
+      --green-800:#166534;
+      --gray-50:#f9fafb;
+      --gray-100:#f3f4f6;
+      --gray-400:#9ca3af;
+      --gray-900:#111827;
+      --white:#ffffff;
+      --maxw:1200px;
+      --radius:18px;
+      --shadow:0 10px 25px rgba(0,0,0,.08);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:var(--gray-50);color:var(--gray-900);line-height:1.5}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+    /* Header */
+    header{position:sticky;top:0;background:#fff;box-shadow:0 1px 10px rgba(0,0,0,.06);z-index:50}
+    .nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
+    .nav img{height:40px}
+    .nav .brand{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--green-700)}
+    .nav-links{display:none;gap:24px}
+    .btn{display:inline-block;padding:12px 18px;border-radius:14px;background:var(--green-600);color:#fff;font-weight:600;box-shadow:var(--shadow);transition:transform .05s ease, background .2s ease}
+    .btn:hover{background:var(--green-700);transform:translateY(-1px)}
+    /* Hero */
+    .hero{position:relative;min-height:75vh;display:grid;place-items:center;text-align:center;color:#fff;background-image:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url('assets/hecke.jpg');background-size:cover;background-position:center}
+    .hero h1{font-size:clamp(32px,6vw,56px);margin:0 0 14px;font-weight:800}
+    .hero p{font-size:clamp(16px,2.4vw,20px);margin:0 0 24px}
+    /* Sections */
+    section{padding:80px 0}
+    .section-title{text-align:center;color:var(--green-700);font-size:clamp(24px,4vw,34px);font-weight:800;margin:0 0 28px}
+    .grid{display:grid;gap:22px}
+    .card{background:#fff;border-radius:var(--radius);padding:24px;text-align:center;box-shadow:var(--shadow)}
+    .card h3{margin:12px 0 6px;font-size:20px}
+    .muted{color:#374151}
+    /* About */
+    .about{background:var(--gray-100)}
+    .about .content{max-width:800px;margin:0 auto;text-align:center;font-size:18px}
+    /* Kontakt */
+    .contact{background:var(--green-700);color:#fff}
+    .contact .cta{display:flex;flex-direction:column;gap:14px;justify-content:center;align-items:center}
+    .contact .cta a{background:#fff;color:var(--green-700);padding:14px 18px;border-radius:14px;box-shadow:var(--shadow);display:flex;align-items:center;gap:10px;font-weight:700}
+    .contact .cta a:hover{background:#f3f4f6}
+    /* Footer */
+    footer{background:#0b1017;color:var(--gray-400);font-size:14px;text-align:center;padding:22px}
+    footer a{color:var(--gray-400);text-decoration:underline}
+    /* Icons */
+    .icon{width:22px;height:22px;display:inline-block;vertical-align:middle}
+    /* Responsive */
+    @media (min-width: 768px){
+      .nav-links{display:flex}
+      .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+      .contact .cta{flex-direction:row}
+    }
+  
+  .hero h1{background-image:linear-gradient(90deg,var(--white),#e5ffe9);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 2px 30px rgba(21,128,61,.35)}
+  .buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btn.whatsapp{background:#25D366;color:#0b1017}
+  .btn.whatsapp:hover{filter:brightness(.95)}
+  @keyframes floatUp{from{transform:translateY(6px);opacity:.95}to{transform:translateY(0);opacity:1}}
+  .hero .btn{animation:floatUp .6s ease both}
+
+</style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Galabau Essen Logo">
+        <span>Galabau Essen</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#ueber-uns">Über&nbsp;uns</a>
+        <a href="#wir">Wir</a><a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <h1>Wir schneiden deine Hecke!</h1>
+        <p>in Essen und Umgebung</p>
+        <div class="buttons">
+          <a class="btn" href="#kontakt">Jetzt Termin vereinbaren</a>
+          <a class="btn whatsapp" href="https://wa.me/49123456789?text=Hallo%20Henning%20und%20Justus%2C%20ich%20habe%20Interesse%20am%20Hecken-%20oder%20Baumschnitt.">WhatsApp jetzt schreiben</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leistungen -->
+    <section id="leistungen">
+      <div class="container">
+        <h2 class="section-title">Unsere Leistungen</h2>
+        <div class="grid cols-3">
+          <article class="card">
+            <div aria-hidden="true" class="icon">
+              <!-- Leaf icon -->
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M11 21C11 21 4 14 4 9a7 7 0 0 1 13.65-1.997A7 7 0 0 1 20 11c0 5-9 10-9 10z"/>
+              </svg>
+            </div>
+            <h3>Heckenschnitt & Formschnitt</h3>
+            <p class="muted">Sauberer, fachgerechter Schnitt und Formschnitt für Hecken aller Art.</p>
+          </article>
+          <article class="card">
+            <div aria-hidden="true" class="icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M11 21C11 21 4 14 4 9a7 7 0 0 1 13.65-1.997A7 7 0 0 1 20 11c0 5-9 10-9 10z"/>
+              </svg>
+            </div>
+            <h3>Strauchschnitt & kleinere Bäume</h3>
+            <p class="muted">Schonender Rückschnitt von Sträuchern und kleineren Bäumen – jahreszeitgerecht.</p>
+          </article>
+          <article class="card">
+            <div aria-hidden="true" class="icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M11 21C11 21 4 14 4 9a7 7 0 0 1 13.65-1.997A7 7 0 0 1 20 11c0 5-9 10-9 10z"/>
+              </svg>
+            </div>
+            <h3>Häckselarbeiten & Entsorgung</h3>
+            <p class="muted">Wir häckseln Schnittgut vor Ort und nehmen es auf Wunsch direkt mit.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Wir stellen uns vor -->
+    <section id="wir" class="about" style="background:#fff;padding:0">
+      <div class="container" style="padding:80px 0">
+        <h2 class="section-title">Wir stellen uns vor</h2>
+        <div class="split" style="display:grid;grid-template-columns:1fr;gap:20px;align-items:stretch">
+          <div class="left" style="min-height:300px;background:url('assets/henning.jpg') center/cover no-repeat;border-radius:16px"></div>
+          <div class="center" style="display:flex;align-items:center;justify-content:center;text-align:center;padding:20px">
+            <p style="max-width:720px;font-size:18px;color:#374151">
+              Wir sind <strong>Henning</strong> (links) & <strong>Justus</strong> (rechts).<br>
+              Wir schneiden <strong>Hecken</strong> und <strong>kleinere Bäume</strong> fachgerecht zurück<br>
+              und übernehmen auch <strong>Häckselarbeiten</strong> sowie die <strong>Häckselarbeiten & Entsorgung</strong>.
+            </p>
+          </div>
+          <div class="right" style="min-height:300px;background:url('assets/justus.jpg') center/cover no-repeat;border-radius:16px"></div>
+        </div>
+      </div>
+      <style>
+        @media (min-width: 900px){
+          #wir .split{grid-template-columns:1fr 1fr 1fr}
+          #wir .center{padding:0 30px}
+        }
+      
+  .hero h1{background-image:linear-gradient(90deg,var(--white),#e5ffe9);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 2px 30px rgba(21,128,61,.35)}
+  .buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btn.whatsapp{background:#25D366;color:#0b1017}
+  .btn.whatsapp:hover{filter:brightness(.95)}
+  @keyframes floatUp{from{transform:translateY(6px);opacity:.95}to{transform:translateY(0);opacity:1}}
+  .hero .btn{animation:floatUp .6s ease both}
+
+</style>
+    </section>
+
+
+    <!-- Über uns -->
+    <section id="ueber-uns" class="about">
+      <div class="container">
+        <h2 class="section-title">Über uns</h2>
+        <p class="content">
+          Wir sind Henning und Justus aus Essen – jung, motiviert und mit Freude an sauberer Arbeit.
+          Unser Anspruch: zuverlässiger Service, faire Preise und ein ordentliches Ergebnis.
+        </p>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="contact">
+      <div class="container">
+        <h2 class="section-title" style="color:#fff">Kontakt</h2>
+        <p class="muted" style="color:#e5e7eb;text-align:center;margin-bottom:22px">Rufen Sie uns an oder schreiben Sie uns direkt:</p>
+        <div class="cta">
+          <a href="tel:+49123456789" aria-label="Telefon">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.15 9.81 19.86 19.86 0 0 1 .08 1.18 2 2 0 0 1 2.06-.99h3a2 2 0 0 1 2 1.72c.12.89.31 1.76.57 2.6a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.93 6.93l1.27-1.27a2 2 0 0 1 2.11-.45c.84.26 1.71.45 2.6.57a2 2 0 0 1 1.72 2z"/>
+            </svg>
+            <span>+4915737173960</span>
+          </a>
+          <a href="mailto:info@galabauessen.de" aria-label="E-Mail">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/>
+            </svg>
+            <span>info@galabauessen.de</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- Rechtliches ausgelagert auf eigene Seiten -->
+    
+  </main>
+
+  <footer>
+    © <span id="year"></span> Galabau Essen – Henning Ohlig. Alle Rechte vorbehalten.
+    · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
